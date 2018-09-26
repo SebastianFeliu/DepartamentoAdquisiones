@@ -31,6 +31,9 @@
                 <li class="nav-item active">
                         <a class="nav-link" href="{{ action('ProductoController@index') }}">Ver Productos</a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ action('StockController@index') }}">Ver Stock</a>
+                </li>
             </ul>
          </nav>
     </div>

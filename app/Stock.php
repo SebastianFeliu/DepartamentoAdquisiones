@@ -13,11 +13,11 @@ class Stock extends Model
     public function producto() {
         //Pertenece a una sucursal
         return $this
-        ->hasMany('App\Producto','idProducto');
+        ->belongsTo('App\Producto','idProducto');
     }
-    public function Bodega() {
+    public function bodega() {
         //Pertenece a una sucursal
         return $this
-        ->hasMany('App\Bodega','idBodega');
+        ->belongsTo('App\Bodega','idBodega');
     }
 }
