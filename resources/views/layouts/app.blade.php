@@ -17,7 +17,10 @@
         <nav class="navbar navbar-expand-sm bg-info navbar-dark">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Active</a>
+                    <a class="nav-link" href="{{ action('SucursalController@index') }}">Ver Sucursales</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{ action('ProveedorController@index') }}">Ver Proveedores</a>
                 </li>
             </ul>
          </nav>
