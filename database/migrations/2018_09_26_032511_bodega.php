@@ -13,7 +13,18 @@ class Bodega extends Migration
      */
     public function up()
     {
-        //
+        Schema::defaultStringLength(191);
+        Schema::create('bodega', function (Blueprint $table) {
+            $table->increments('idBodega');
+            $table->string('nombreBodega');
+            $table->string('tipoBodega');
+            $table->integer('capacidad');
+            $table->string('codigoOrden');
+            $table->string('ubicacion');
+            $table->integer('idSucursal')->unsigned();
+            $table->foreign('idSucursal')->references('idSucursal')->on('sucursal')->onDelete('cascade');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +34,7 @@ class Bodega extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('bodega');
+
     }
 }

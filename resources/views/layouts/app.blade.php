@@ -22,6 +22,9 @@
                 <li class="nav-item active">
                         <a class="nav-link" href="{{ action('ProveedorController@index') }}">Ver Proveedores</a>
                 </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{ action('BodegaController@index') }}">Ver Bodegas</a>
+                </li>
             </ul>
          </nav>
     </div>

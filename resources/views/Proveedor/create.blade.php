@@ -26,7 +26,7 @@
                             <label for="nombreProveedor" class="col-md-4 col-form-label text-md-right">{{ __('Nombre Proveedor') }}</label>
 
                             <div class="col-md-6">
-                                <input id="nombreProveedor" type="text" class="form-control{{ $errors->has('nombreProveedor') ? ' is-invalid' : '' }}" name="nombreProveedor" value="{{ old('nombreSucursal') }}" required>
+                                <input id="nombreProveedor" type="text" class="form-control{{ $errors->has('nombreProveedor') ? ' is-invalid' : '' }}" name="nombreProveedor" value="{{ old('nombreProveedor') }}" required>
 
                                 @if ($errors->has('nombreProveedor'))
                                     <span class="invalid-feedback" role="alert">

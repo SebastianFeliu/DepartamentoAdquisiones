@@ -16,4 +16,6 @@ Route::get('/', function () {
 });
 Route::resource('sucursales','SucursalController');
 Route::resource('proveedores','ProveedorController');
+Route::resource('bodegas','BodegaController');
+
 
