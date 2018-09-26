@@ -15,6 +15,9 @@
 <body>
     <div class="">
         <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+                <a class="navbar-brand" href="{{ route('Home') }}">
+                        <i class="fas fa-home"></i>
+                </a>
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ action('SucursalController@index') }}">Ver Sucursales</a>

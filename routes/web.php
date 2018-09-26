@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('Home');;
 Route::resource('sucursales','SucursalController');
 Route::resource('proveedores','ProveedorController');
 Route::resource('bodegas','BodegaController');
