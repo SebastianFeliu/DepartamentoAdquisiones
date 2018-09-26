@@ -11,6 +11,7 @@ class Bodega extends Model
     protected $fillable = ['nombreBodega','tipoBodega','capacidad','codigoOrden','ubicacion','idSucursal'];
 
     public function sucursal() {
+        //Pertenece a una sucursal
         return $this
         ->belongsTo('App\Sucursal','idSucursal');
     }

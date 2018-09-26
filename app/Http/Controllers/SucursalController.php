@@ -38,18 +38,6 @@ class SucursalController extends Controller
         $sucursal->save();
         return redirect()->route('sucursales.index')->with('success','Sucursal creada satisfactoriamente');
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
     /**
      * Show the form for editing the specified resource.
      *

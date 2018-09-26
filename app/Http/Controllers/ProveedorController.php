@@ -38,18 +38,6 @@ class ProveedorController extends Controller
         $proveedor->save();
         return redirect()->route('proveedores.index')->with('success','Proveedor creado satisfactoriamente');
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
     /**
      * Show the form for editing the specified resource.
      *

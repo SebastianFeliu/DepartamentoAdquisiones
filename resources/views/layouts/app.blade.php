@@ -28,6 +28,9 @@
                 <li class="nav-item active">
                         <a class="nav-link" href="{{ action('BodegaController@index') }}">Ver Bodegas</a>
                 </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{ action('ProductoController@index') }}">Ver Productos</a>
+                </li>
             </ul>
          </nav>
     </div>

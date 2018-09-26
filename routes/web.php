@@ -17,5 +17,8 @@ Route::get('/', function () {
 Route::resource('sucursales','SucursalController');
 Route::resource('proveedores','ProveedorController');
 Route::resource('bodegas','BodegaController');
+Route::resource('productos','ProductoController');
+Route::resource('stock','StockController');
+
 
 
